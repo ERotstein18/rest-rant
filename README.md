@@ -1,3 +1,3 @@
-# rest-rant
+# Project REST-Rant
 
-/Project for UNLV BE
+REST-Rant is an app where users can review restaurants.

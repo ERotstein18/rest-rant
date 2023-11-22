@@ -1,15 +1,22 @@
+//for modules & globals
 require('dotenv').config()
 const express = require('express')
 const app = express()
 
+//Express settings
+app.set('view engine', 'jsx')
+app.engine('jsx', require('express-react-views').createEngine())
+
+//for controllers & routes
 app.use('/places', require('./controllers/places'))
 
 app.get('/', (req, res) => {
-    res.send('Hello world!')
+  res.send('home')
 })
 
 app.get('*', (req, res) => {
-    res.status(404).send('<h1>404 Page</h1>')
+  res.send('404 page')
 })
 
+//for Connections
 app.listen(process.env.PORT)

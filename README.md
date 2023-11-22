@@ -3,6 +3,7 @@
 ##Routes
 
 |   Method  |       Path                |          Purpose                                |
+|-----------|---------------------------|-------------------------------------------------|
 |   GET     |       '/'                 | Home page                                       |
 |   GET     | `/places`                 | Places index page                               |
 |   POST    | `/places`                 | Create new place                                |
@@ -26,6 +27,7 @@ REST-Rant is an app where users can review restaurants.
 **places**
 
 |   Field    |    Type      |
+|------------|--------------|
 |   _id      | Object ID    |
 |   name     | string       |
 |   city     | string       |

@@ -1,5 +1,4 @@
 const router = require("express").Router();
-const { get } = require("express/lib/response");
 const places = require("../models/places.js");
 
 router.get("/", (req, res) => {
@@ -8,8 +7,7 @@ router.get("/", (req, res) => {
 
 router.post("/", (req, res) => {
   if (!req.body.pic) {
-    // Default image if one is not provided
-    req.body.pic = "http://placekitten.com/400/400";
+    req.body.pic = "./public/images/feifei.jpg";
   }
   if (!req.body.city) {
     req.body.city = "Anytown";
@@ -36,7 +34,6 @@ router.get("/:id", (req, res) => {
   }
 });
 
-
 router.put("/:id", (req, res) => {
   let id = Number(req.params.id);
   if (isNaN(id)) {
@@ -45,7 +42,7 @@ router.put("/:id", (req, res) => {
     res.render("error404");
   } else {
     if (!req.body.pic) {
-      req.body.pic = "http://placekitten.com/400/400";
+      req.body.pic = "./public/images/feifei.jpg";
     }
     if (!req.body.city) {
       req.body.city = "Anytown";

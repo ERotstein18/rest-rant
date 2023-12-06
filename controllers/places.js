@@ -7,7 +7,7 @@ router.get("/", (req, res) => {
 
 router.post("/", (req, res) => {
   if (!req.body.pic) {
-    req.body.pic = "./public/images/feifei.jpg";
+    req.body.pic = "/public/images/feifei.jpg";
   }
   if (!req.body.city) {
     req.body.city = "Anytown";
@@ -85,5 +85,10 @@ router.post("/:id/rant", (req, res) => {
 router.delete("/:id/rant/:rantId", (req, res) => {
   res.send("Delete a rant (comment) about a particular place");
 });
+
+// SEED
+breads.get('/data/seed', (req, res) => {
+      res.redirect('../seeders/seed-places.js')
+    })
 
 module.exports = router;

@@ -27,7 +27,7 @@ function show(data) {
       </div>
     </main>
     </Def>
-  );
+  )
 }
 
 module.exports = show;

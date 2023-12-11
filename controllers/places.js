@@ -68,7 +68,7 @@ router.delete("/:id/rant/:rantId", (req, res) => {
 });
 
 // SEED
-breads.get('/data/seed', (req, res) => {
+router.get('/data/seed', (req, res) => {
       res.redirect('../seeders/seed-places.js')
     })
 

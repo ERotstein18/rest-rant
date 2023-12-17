@@ -1,12 +1,16 @@
 const React = require("react");
 const Def = require("../default");
 
-function new_form() {
+function new_form(data) {
+  let message = "";
+  if (data.message) {
+    message = <h4 className='alert-danger'>{data.message}</h4>;
+  }
   return (
     <Def>
       <main>
         <h1>Add a New Place</h1>
-
+        {message}
         <form method='POST' action='/places'>
           <div className='form-group'>
             <label htmlFor='name'>Place Name</label>
@@ -27,6 +31,10 @@ function new_form() {
           <div className='form-group'>
             <label htmlFor='cuisines'>Cuisines</label>
             <input className='form-control' id='cuisines' name='cuisines' required />
+          </div>
+          <div className='form-group'>
+            <label htmlFor='founded'>Founded Year</label>
+            <input type='number' className='form-control' id='founded' name='founded' value={new Date().getFullYear()} />
           </div>
           <input className='btn btn-primary' type='submit' value='Add Place' />
         </form>

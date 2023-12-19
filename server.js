@@ -3,6 +3,7 @@ require('dotenv').config();
 const express = require('express')
 const app = express();
 const methodOverride = require("method-override");
+const mongoose = require('mongoose')
 
 // Express Settings
 app.set('views', __dirname + '/views')

@@ -41,7 +41,7 @@ function show(data) {
   }
 
   return (
-    <Def>
+    <Def title="Restaurant Details">
       <main>
         <div className='row'>
           <div className='col-sm-6'>

@@ -3,9 +3,11 @@ const Def = require('./default')
 
 function home () {
     return (
-      <Def>
+      <Def title="REST-Rant Home">
           <main>
-          <h1>HOME</h1>
+          <h1>
+            <a href="/places" style={{ color: "inherit", textDecoration: "none"}}>HOME</a>
+          </h1>
         <div>
           <img src="/images/chia-fruit-drink.jpg" alt="Chia Fruit Shake" />
           <div>

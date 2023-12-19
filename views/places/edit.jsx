@@ -3,7 +3,7 @@ const Def = require("../default");
 
 function edit_form(data){
   return (
-    <Def>
+    <Def title="Edit Restaurant">
       <main>
         <h1>Edit a New Place</h1>
         <form method="POST" action={`/places/${data.index}?_method=PUT`}>

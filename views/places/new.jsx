@@ -7,7 +7,7 @@ function new_form(data) {
     message = <h4 className='alert-danger'>{data.message}</h4>;
   }
   return (
-    <Def>
+    <Def title="Add a New Restaurant">
       <main>
         <h1>Add a New Place</h1>
         {message}

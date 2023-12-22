@@ -6,7 +6,7 @@ function home () {
       <Def title="REST-Rant Home">
           <main>
           <h1>
-            <a href="/places" style={{ color: "inherit", textDecoration: "none"}}>HOME</a>
+            <a href="/" style={{ color: "inherit", textDecoration: "none"}}>HOME</a>
           </h1>
         <div>
           <img src="/images/chia-fruit-drink.jpg" alt="Chia Fruit Shake" />

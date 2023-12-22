@@ -1,7 +1,7 @@
 {
   "name": "rest-rant",
   "version": "1.0.0",
-  "description": "",
+  "description": "|   Method  |       Path                |          Purpose                                |\r |-----------|---------------------------|-------------------------------------------------|\r |   GET     |       '/'                 | Home page                                       |\r |   GET     | `/places`                 | Places index page                               |\r |   POST    | `/places`                 | Create new place                                |\r |   GET     | `/places/new`             | Form page for creating a new place              |\r |   GET     | `/places/:id`             | Details about a particlar place                 |\r |   PUT     | `/places/:id`             | Update a particular place                       |\r |   GET     | `/places/:id/edit`        | Form page for editing an existing place       |  \r |   DELETE  | `/places/:id`             | Delete a particular place                       |\r |   POST    | `/places/:id/rant`        | Create a rant (comment) about a particular place|\r |   DELETE  | `/places/:id/rant/:rantId`| Delete a rant (comment) about a particular place|\r |   GET     |   *                       | 404 page (matches any route not define above)|",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,8 +14,8 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-react-views": "^0.11.0",
-    "mongoose": "^8.0.2",
     "method-override": "3.0.0",
+    "mongoose": "^8.0.3",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   }
